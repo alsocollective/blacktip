@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load thumbnail %}
+{% load static %}
+
+
+{% block pageID%}home{% endblock %}
+
+{% block header %}
+{% endblock %}
+
+{% block content %}
+	hello world
+	<div id="yeaaaslider"></div>
+{% endblock %}
+
+{% block footer %}
+{% endblock %}
+
+{% block other %}
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="{% static "js/slider.js" %}"></script>
+<script type="text/javascript" src="{% static "js/main.js" %}"></script>
+<script type="text/javascript">
+	app.init();
+</script>
+{% endblock %}
